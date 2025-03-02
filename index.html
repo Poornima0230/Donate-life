@@ -65,146 +65,122 @@
       <!-- header ends here -->
 
       <!-- hidden-navbar -->
-      <div
-        class="hidden w-3/4 z-50 decoration-0 text-xl ml-0 fixed top-20 h-full bg-[#0663C7]"
-        id="open"
-      >
-        <ul class="flex flex-col p-3 gap-5 text-white flex-wrap">
-          <li>
-            <a
-              href="#"
-              onclick="hideside()"
-              class="text-4xl fixed top-20 right-1/3 pl-19"
-              >&times;</a
-            >
-          </li>
+     <div
+     class="hidden w-3/4 z-50 decoration-0 text-xl ml-0 fixed top-20 h-full bg-[#0663C7]"
+     id="open"
+   >
+     <ul class="flex flex-col p-3 gap-5 text-white flex-wrap">
+       <li>
+         <a
+           href="#"
+           onclick="hideside()"
+           class="text-4xl fixed top-20 right-1/3 pl-19"
+           >&times;</a
+         >
+       </li>
 
-          <li>
-            <a href="./home.html"><i class="fa-solid fa-house p-3"></i>Home</a>
-          </li>
-          <li>
-            <a href="./home.html"
-              ><i class="fa-solid fa-gear p-3"></i>Settings</a
-            >
-          </li>
-          <li>
-            <a href="./home.html"
-              ><i class="fa-solid fa-address-book p-3"></i>Contact Us</a
-            >
-          </li>
-          <li>
-            <a href="./home.html"
-              ><i class="fa-solid fa-circle-info p-3"></i>About Us</a
-            >
-          </li>
-          <li>
-            <a href="./home.html"
-              ><i class="fa-regular fa-circle-question p-3"></i>Help</a
-            >
-          </li>
-          <li>
-            <a href="./home.html" class="flex p-3"
-              ><img
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgMGMtMS43IDAtMyAxLjMtMyAzdjZjMCAxLjcgMS4zIDMgMyAzaDZsNCA0di00YzEuNyAwIDMtMS4zIDMtM1YzYzAtMS43LTEuMy0zLTMtM3ptNC4xODggM2gxLjcxOGwxLjY4OCA2aC0xLjVsLS40MDctMS41aC0xLjVMMTYuODEzIDlIMTUuNXpNMTggNGMtLjEuNC0uMjEyLjg4OC0uMzEzIDEuMTg4bC0uMjggMS4zMTJoMS4xODdsLS4yODItMS4zMTNDMTguMTEzIDQuODg4IDE4IDQuNCAxOCA0TTMgMTBjLTEuNyAwLTMgMS4zLTMgM3Y2YzAgMS43IDEuMyAzIDMgM3Y0bDQtNGg2YzEuNyAwIDMtMS4zIDMtM3YtNmgtM2MtMS45IDAtMy40MDYtMS4zLTMuOTA2LTN6bTQuNTk0IDIuOTA2YzEuNyAwIDIuNSAxLjQgMi41IDNjMCAxLjQtLjQ4MSAyLjI4OC0xLjI4MSAyLjY4OGMuNC4yLjg3NC4zMDYgMS4zNzQuNDA2bC0uMzc0IDFjLS43LS4yLTEuNDI2LS41MTItMi4xMjYtLjgxM2MtLjEtLjEtLjI3NS0uMDkzLS4zNzUtLjA5M0M2LjExMiAxOC45OTQgNSAxOCA1IDE2YzAtMS43Ljk5NC0zLjA5NCAyLjU5NC0zLjA5NG0wIDEuMDk0Yy0uOCAwLTEuMTg4LjktMS4xODggMmMwIDEuMi4zODggMiAxLjE4OCAyczEuMjE4LS45IDEuMjE4LTJzLS40MTgtMi0xLjIxOC0yIi8+PC9zdmc+"
-              />&nbsp;&nbsp;FA.Q's</a
-            >
-          </li>
+       <li>
+         <a href="./home.html"><i class="fa-solid fa-house p-3"></i>Home</a>
+       </li>
+       <li>
+         <a href="#"
+           ><i class="fa-solid fa-gear p-3"></i>Settings</a
+         >
+       </li>
+       <li>
+         <a href="3"
+           ><i class="fa-solid fa-address-book p-3"></i>Contact Us</a
+         >
+       </li>
+       <li>
+         <a href="#"
+           ><i class="fa-solid fa-circle-info p-3"></i>About Us</a
+         >
+       </li>
+       <li>
+         <a href="#"
+           ><i class="fa-regular fa-circle-question p-3"></i>Help</a
+         >
+       </li>
+       <li>
+         <a href="#" class="flex p-3"
+           ><img
+             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgMGMtMS43IDAtMyAxLjMtMyAzdjZjMCAxLjcgMS4zIDMgMyAzaDZsNCA0di00YzEuNyAwIDMtMS4zIDMtM1YzYzAtMS43LTEuMy0zLTMtM3ptNC4xODggM2gxLjcxOGwxLjY4OCA2aC0xLjVsLS40MDctMS41aC0xLjVMMTYuODEzIDlIMTUuNXpNMTggNGMtLjEuNC0uMjEyLjg4OC0uMzEzIDEuMTg4bC0uMjggMS4zMTJoMS4xODdsLS4yODItMS4zMTNDMTguMTEzIDQuODg4IDE4IDQuNCAxOCA0TTMgMTBjLTEuNyAwLTMgMS4zLTMgM3Y2YzAgMS43IDEuMyAzIDMgM3Y0bDQtNGg2YzEuNyAwIDMtMS4zIDMtM3YtNmgtM2MtMS45IDAtMy40MDYtMS4zLTMuOTA2LTN6bTQuNTk0IDIuOTA2YzEuNyAwIDIuNSAxLjQgMi41IDNjMCAxLjQtLjQ4MSAyLjI4OC0xLjI4MSAyLjY4OGMuNC4yLjg3NC4zMDYgMS4zNzQuNDA2bC0uMzc0IDFjLS43LS4yLTEuNDI2LS41MTItMi4xMjYtLjgxM2MtLjEtLjEtLjI3NS0uMDkzLS4zNzUtLjA5M0M2LjExMiAxOC45OTQgNSAxOCA1IDE2YzAtMS43Ljk5NC0zLjA5NCAyLjU5NC0zLjA5NG0wIDEuMDk0Yy0uOCAwLTEuMTg4LjktMS4xODggMmMwIDEuMi4zODggMiAxLjE4OCAyczEuMjE4LS45IDEuMjE4LTJzLS40MTgtMi0xLjIxOC0yIi8+PC9zdmc+"
+           />&nbsp;&nbsp;FA.Q's</a
+         >
+       </li>
 
-          <li>
-            <a href="./home.html"
-              ><i class="fa-solid fa-share-from-square p-3"></i>Share</a
-            >
-          </li>
-        </ul>
-      </div>
+       <li>
+         <a href="#"
+           ><i class="fa-solid fa-share-from-square p-3"></i>Share</a
+         >
+       </li>
+     </ul>
+   </div>
 
-      <main class="flex flex-wrap justify-center items-start gap-6 w-full p-4">
-        <!-- First Video -->
-        <div class="w-full md:w-[45%] lg:w-[40%] text-center">
-          <iframe
-            height="213"
-            src="https://www.youtube.com/embed/9qFoWtlrvrc?si=8gmHG2T4nwdA7GpP"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            class="rounded-xl w-full"
-          ></iframe>
-          <p class="text-justify text-wrap mt-2">
-            Organ Donation Awareness Campaign Donate Life Anand chapter at Anand
-            District Various Educational Institutes and Universities.
-            <br />
-            Join the movement! Support organ donation awareness & inspire others
-            to become donors.
-            <br />
-            Donate Organs... Save Lives...
-          </p>
-        </div>
+   <main class="flex flex-wrap justify-center items-start gap-6 w-full p-4">
+    <!-- First Video -->
+    <div class="w-full md:w-[45%] lg:w-[40%] text-center">
+      <iframe
+        height="213"
+        src="https://www.youtube.com/embed/9qFoWtlrvrc?si=8gmHG2T4nwdA7GpP"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="rounded-xl w-full"
+      ></iframe>
+      <p class="text-justify text-wrap mt-2">
+        This video explains how someone can donate an organ while alive and how living donation can benefit others. 
+<br>
+Living organ donation is helping to save the lives of those in need of a new kidney or liver. Over 100,000 people in the U.S. are on the National Transplant Waiting List.  Some wait years to receive a life-saving transplant, and around 17 die every day.  
+      </p>
+    </div>
 
-        <!-- Second Video -->
-        <div class="w-full md:w-[45%] lg:w-[40%] text-center">
-          <iframe
-            height="213"
-            src="https://www.youtube.com/embed/ub3Q3t7Juak?si=qwWbH-ShePUPijZV"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            class="rounded-xl w-full"
-          ></iframe>
-          <p class="text-justify text-wrap mt-2">
-            This animated video explains the transplant waiting list, how to
-            become a donor, the process of matching organs, and signing up to
-            share the gift of life. Register to become an organ donor today and
-            share the gift of life.
-          </p>
-        </div>
+    <!-- Second Video -->
+    <div class="w-full md:w-[45%] lg:w-[40%] text-center">
+      
+      <iframe height="213" src="https://www.youtube.com/embed/5jmSH9uvGPc?si=w92RONWqQBC6VOMn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  class="rounded-xl w-full"></iframe>
+      <p class="text-justify text-wrap mt-2">
+        DoNation is the campaign uniting America’s workplaces in support of organ, eye, and tissue donation. This video gives an overview of the organ donation process, including criteria for matching donors and recipients. 
+      </p>
+    </div>
 
-        <!-- First Video -->
-        <div class="w-full md:w-[45%] lg:w-[40%] text-center">
-          <iframe
-            height="213"
-            src="https://www.youtube.com/embed/9qFoWtlrvrc?si=8gmHG2T4nwdA7GpP"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            class="rounded-xl w-full"
-          ></iframe>
-          <p class="text-justify text-wrap mt-2">
-            Organ Donation Awareness Campaign Donate Life Anand chapter at Anand
-            District Various Educational Institutes and Universities.
-            <br />
-            Join the movement! Support organ donation awareness & inspire others
-            to become donors.
-            <br />
-            Donate Organs... Save Lives...
-          </p>
-        </div>
+    <!-- First Video -->
+    <div class="w-full md:w-[45%] lg:w-[40%] text-center">
+      <iframe height="213" src="https://www.youtube.com/embed/3e2phYzHJOI?si=4jZ2YlbrRRFSS_Yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-xl w-full"></iframe>
+      <p class="text-justify text-wrap mt-2">
+        Organ Donation Awareness Campaign Donate Life Anand chapter at Anand
+        District Various Educational Institutes and Universities.
+        <br />
+        Join the movement! Support organ donation awareness & inspire others
+        to become donors.
+        <br />
+        Donate Organs... Save Lives...
+      </p>
+    </div>
 
-        <!-- Second Video -->
-        <div class="w-full md:w-[45%] lg:w-[40%] text-center">
-          <iframe
-            height="213"
-            src="https://www.youtube.com/embed/ub3Q3t7Juak?si=qwWbH-ShePUPijZV"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            class="rounded-xl w-full"
-          ></iframe>
-          <p class="text-justify text-wrap mt-2">
-            This animated video explains the transplant waiting list, how to
-            become a donor, the process of matching organs, and signing up to
-            share the gift of life. Register to become an organ donor today and
-            share the gift of life.
-          </p>
-        </div>
-      </main>
+    <!-- Second Video -->
+    <div class="w-full md:w-[45%] lg:w-[40%] text-center">
+      <iframe
+        height="213"
+        src="https://www.youtube.com/embed/ub3Q3t7Juak?si=qwWbH-ShePUPijZV"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        class="rounded-xl w-full"
+      ></iframe>
+      <p class="text-justify text-wrap mt-2">
+        This animated video explains the transplant waiting list, how to
+        become a donor, the process of matching organs, and signing up to
+        share the gift of life. Register to become an organ donor today and
+        share the gift of life.
+      </p>
+    </div>
+  </main>
 
       <!-- Bottom Navigation Bar (Always Visible) -->
       <nav
