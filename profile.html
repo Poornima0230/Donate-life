@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d7e76cad7f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showside() {
+        document.getElementById("open").style.display = "block";
+      }
+      function hideside() {
+        document.getElementById("open").style.display = "none";
+      }
+    </script>
+    <title>profile-testing</title>
+  </head>
+  <body class="min-h-screen pb-16 overflow-auto">
+    <!-- header starts here -->
+    <header class="w-full shadow-lg ">
+      <div class="flex text-2xl h-15 gap-3 items-center p-6">
+        <p onclick="showside()">&#9776;</p>
+        <h1 class="font-serif text-2xl">Profile</h1>
+      </div>
+    </header>
+    <!-- header ends here -->
+     <!-- hidden-navbar -->
+    <div class="hidden w-1/2 z-50 decoration-0 text-xl ml-0 fixed top-20 h-full bg-[#0663C7]" id="open">
+     
+      <ul class="flex flex-col p-9 gap-5 text-white">
+      <li>
+        <a
+          href="#"
+          
+          onclick="hideside()"
+          class="text-4xl fixed top-20 right-1/2 mr-4">&times;</a
+        >
+      </li>
+
+      <li><a href="./index.html"><i class="fa-solid fa-house p-3"></i>Home</a></li>
+      <li><a href="./index.html"><i class="fa-solid fa-gear p-3"></i>Settings</a></li>
+      <li><a href="./index.html"><i class="fa-solid fa-address-book p-3"></i>Contact Us</a></li>
+      <li><a href="./index.html"><i class="fa-solid fa-circle-info p-3"></i>About Us</a></li>
+      <li><a href="./index.html"><i class="fa-regular fa-circle-question p-3"></i>Help</a></li>
+      <li><a href="./index.html" class="flex p-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgMGMtMS43IDAtMyAxLjMtMyAzdjZjMCAxLjcgMS4zIDMgMyAzaDZsNCA0di00YzEuNyAwIDMtMS4zIDMtM1YzYzAtMS43LTEuMy0zLTMtM3ptNC4xODggM2gxLjcxOGwxLjY4OCA2aC0xLjVsLS40MDctMS41aC0xLjVMMTYuODEzIDlIMTUuNXpNMTggNGMtLjEuNC0uMjEyLjg4OC0uMzEzIDEuMTg4bC0uMjggMS4zMTJoMS4xODdsLS4yODItMS4zMTNDMTguMTEzIDQuODg4IDE4IDQuNCAxOCA0TTMgMTBjLTEuNyAwLTMgMS4zLTMgM3Y2YzAgMS43IDEuMyAzIDMgM3Y0bDQtNGg2YzEuNyAwIDMtMS4zIDMtM3YtNmgtM2MtMS45IDAtMy40MDYtMS4zLTMuOTA2LTN6bTQuNTk0IDIuOTA2YzEuNyAwIDIuNSAxLjQgMi41IDNjMCAxLjQtLjQ4MSAyLjI4OC0xLjI4MSAyLjY4OGMuNC4yLjg3NC4zMDYgMS4zNzQuNDA2bC0uMzc0IDFjLS43LS4yLTEuNDI2LS41MTItMi4xMjYtLjgxM2MtLjEtLjEtLjI3NS0uMDkzLS4zNzUtLjA5M0M2LjExMiAxOC45OTQgNSAxOCA1IDE2YzAtMS43Ljk5NC0zLjA5NCAyLjU5NC0zLjA5NG0wIDEuMDk0Yy0uOCAwLTEuMTg4LjktMS4xODggMmMwIDEuMi4zODggMiAxLjE4OCAyczEuMjE4LS45IDEuMjE4LTJzLS40MTgtMi0xLjIxOC0yIi8+PC9zdmc+">&nbsp;&nbsp;FA.Q's</a></li>
+
+      <li><a href="./index.html"><i class="fa-solid fa-share-from-square p-3"></i>Share</a></li>
+      </ul>
+  </div>
+</nav>
+    <main
+      class="flex flex-wrap justify-center items-start gap-6 w-full p-4 z-0"
+    >
+    <img src="./Donate_Life/profiles.png" class="bg-white"
+    >
+
+    <div class="p-6 w-3/4 flex flex-col items-start justify-start shadow-lg text-2xl text-left rounded-md">
+      
+<div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Personal Details</p></div>
+<div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Nominee Detials</p></div>
+<div class="flex justify-start gap-3 "><i class="fa-solid fa-angle-right"></i><p>Settings</p></div>
+<div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Log out </p></log></div>
+<div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Contact Us</p></div>
+<div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Help</p></div>
+
+    </div>
+  </main>
+
+    <!-- Bottom Navigation Bar (Always Visible) -->
+    <nav
+      class="fixed bottom-0 left-0 w-full bg-white text-white p-3 shadow-md z-50 border-t-2 border-t-[#0663C7]"
+    >
+      <div class="flex justify-around">
+        <div class="h-full">
+          <a href="./index.html" class="flex flex-col items-center">
+            <span
+              ><img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNNSAyMFY5LjVsNy01LjI4OEwxOSA5LjVWMjBoLTUuMTkydi02LjM4NGgtMy42MTZWMjB6Ii8+PC9zdmc+"
+            /></span>
+            <!-- <span class="text-sm text-[#0663C7]">Home</span> -->
+          </a>
+        </div>
+        <div class="h-full p-2">
+          <a href="./registration.html" class="flex flex-col items-center">
+            <span
+              ><img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNNiAxOS4yM3EtLjUwOCAwLS44Ny0uMzZUNC43NyAxOHQuMzYtLjg3dC44Ny0uMzZ0Ljg3LjM2dC4zNi44N3QtLjM2Ljg3dC0uODcuMzZtMC02cS0uNTA4IDAtLjg3LS4zNlQ0Ljc3IDEydC4zNi0uODd0Ljg3LS4zNnQuODcuMzZ0LjM2Ljg3dC0uMzYuODd0LS44Ny4zNm0wLTZxLS41MDggMC0uODctLjM2VDQuNzcgNnQuMzYtLjg3dC44Ny0uMzZ0Ljg3LjM2dC4zNi44N3QtLjM2Ljg3dC0uODcuMzZtNiAwcS0uNTA4IDAtLjg3LS4zNlQxMC43NyA2dC4zNi0uODd0Ljg3LS4zNnQuODcuMzZ0LjM2Ljg3dC0uMzYuODd0LS44Ny4zNm02IDBxLS41MDggMC0uODctLjM2VDE2Ljc3IDZ0LjM2LS44N3QuODctLjM2dC44Ny4zNnQuMzYuODd0LS4zNi44N3QtLjg3LjM2bS02IDZxLS41MDggMC0uODctLjM2dC0uMzYtLjg3dC4zNi0uODd0Ljg3LS4zNnQuODcuMzZ0LjM2Ljg3dC0uMzYuODd0LS44Ny4zNm0xLjIzIDZ2LTIuMjA5bDUuMzM0LTUuMzA3cS4xNDgtLjE0OC4zMDUtLjJ0LjMxNS0uMDUycS4xNzIgMCAuMzM4LjA2NHEuMTY2LjA2NS4zMDEuMTkzbC45MjUuOTQ1cS4xMjMuMTQ4LjE4OC4zMDdxLjA2NC4xNi4wNjQuMzJxMCAuMTU5LS4wNjEuMzIydC0uMTkxLjMxbC01LjMwOCA1LjMwOHptNi44ODYtNS45NGwtLjkyNS0uOTQ0em0tNiA1LjA1NmguOTVsMy40NjctMy40NzNsLS40Ny0uNDc1bC0uNDU1LS40ODlsLTMuNDkyIDMuNDg3em0zLjk0OC0zLjk0OGwtLjQ1Ni0uNDg5bC45MjUuOTY0eiIvPjwvc3ZnPg=="
+            /></span>
+            <!-- <span class="text-sm text-black">Register</span> -->
+          </a>
+        </div>
+        <div class="h-full p-2">
+          <a href="./organDetails.html" class="flex flex-col items-center">
+            <span
+              ><img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDAwIiBkPSJNMTcuNzMgMTIuNDYycS4yMTQgMCAuMzU4LS4xNDR0LjE0My0uMzU2dC0uMTQ0LS4zNTd0LS4zNTYtLjE0M2gtMy4wNzdxLS4yMTMgMC0uMzU3LjE0M3EtLjE0My4xNDMtLjE0My4zNTd0LjE0My4zNTZ0LjM1Ny4xNDR6bTAtMi43N3EuMjE0IDAgLjM1OC0uMTQzdC4xNDMtLjM1N3QtLjE0NC0uMzU2dC0uMzU2LS4xNDRoLTMuMDc3cS0uMjEzIDAtLjM1Ny4xNDNxLS4xNDMuMTQ0LS4xNDMuMzU3dC4xNDMuMzU3dC4zNTcuMTQzem0tOC42NTMgMy42MTZxLS44MjMgMC0xLjM5NC4xMTRxLS41NzIuMTE0LTEuMDI1LjM2OHEtLjM5LjIxLS41ODkuNDU5dC0uMTk4LjUzMnEwIC4yMjMuMTc3LjM3NXQuNDQ0LjE1Mmg1LjE3cS4yNjcgMCAuNDQ0LS4xNjV0LjE3Ny0uMzkzcTAtLjI1Mi0uMTg5LS40ODl0LS41OTgtLjQ3cS0uNDU0LS4yNTUtMS4wMjUtLjM2OXQtMS4zOTQtLjExNG0wLTEuNjE2cS42MzMgMCAxLjA2Ni0uNDMzcS40MzQtLjQzNC40MzQtMS4wNjd0LS40MzQtMS4wNjZ0LTEuMDY2LS40MzR0LTEuMDY2LjQzNHQtLjQzNCAxLjA2NnQuNDM0IDEuMDY3dDEuMDY2LjQzM000LjYxNiAxOXEtLjY5MSAwLTEuMTUzLS40NjJUMyAxNy4zODRWNi42MTZxMC0uNjkxLjQ2My0xLjE1M1Q0LjYxNSA1aDE0Ljc3cS42OSAwIDEuMTUyLjQ2M1QyMSA2LjYxNnYxMC43NjlxMCAuNjktLjQ2MyAxLjE1M1QxOS4zODUgMTl6bTAtMWgxNC43NjlxLjIzIDAgLjQyMy0uMTkydC4xOTItLjQyNFY2LjYxNnEwLS4yMzEtLjE5Mi0uNDI0VDE5LjM4NSA2SDQuNjE1cS0uMjMgMC0uNDIzLjE5MlQ0IDYuNjE2djEwLjc2OXEwIC4yMy4xOTIuNDIzdC40MjMuMTkyTTQgMThWNnoiLz48L3N2Zz4="
+            /></span>
+            <!-- <span class="text-sm text-[#0663C7]">Organ Details</span> -->
+          </a>
+        </div>
+        <div class="h-full border-4 border-[#0663C7] p-2 rounded-t-full">
+          <a href="./profile.html" class="flex flex-col items-center">
+            <span
+              ><img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDY2M0M3IiBkPSJNMTIgMTEuMzg1cS0xLjIzNyAwLTIuMTE5LS44ODJUOSA4LjM4NXQuODgxLTIuMTJUMTIgNS4zODZ0Mi4xMTkuODh0Ljg4MSAyLjEydC0uODgxIDIuMTE4dC0yLjExOS44ODJtLTcgNi4xOTJ2LS42MDhxMC0uNjE5LjM2LTEuMTU4cS4zNjEtLjU0Ljk3LS44MzhxMS40MTYtLjY3OSAyLjgzNC0xLjAxOHExLjQxNy0uMzQgMi44MzYtLjM0dDIuODM3LjM0dDIuODMyIDEuMDE4cS42MS4yOTguOTcuODM4cS4zNjEuNTM5LjM2MSAxLjE1OHYuNjA4cTAgLjQ0LS4yOTkuNzRxLS4yOTkuMjk4LS43NC4yOThINi4wNHEtLjQ0MSAwLS43NC0uMjk5dC0uMy0uNzRtMSAuMDM5aDEydi0uNjQ3cTAtLjMzMi0uMjE1LS42MjVxLS4yMTQtLjI5Mi0uNTkzLS40OTRxLTEuMjM0LS41OTgtMi41NDYtLjkxNlQxMiAxNC42MTZ0LTIuNjQ2LjMxOHQtMi41NDYuOTE2cS0uMzguMjAyLS41OTMuNDk0UTYgMTYuNjM3IDYgMTYuOTd6bTYtNy4yMzFxLjgyNSAwIDEuNDEzLS41ODhUMTQgOC4zODR0LS41ODctMS40MTJUMTIgNi4zODR0LTEuNDEyLjU4OFQxMCA4LjM4NHQuNTg4IDEuNDEzdDEuNDEyLjU4N20wIDcuMjMyIi8+PC9zdmc+"
+            /></span>
+            <!-- <span class="text-sm text-[#0663C7]">Profile</span> -->
+          </a>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
