@@ -33,36 +33,65 @@
     </header>
     <!-- header ends here -->
      <!-- hidden-navbar -->
-    <div class="hidden w-1/2 z-50 decoration-0 text-xl ml-0 fixed top-20 h-full bg-[#0663C7]" id="open">
-     
-      <ul class="flex flex-col p-9 gap-5 text-white">
-      <li>
-        <a
-          href="#"
-          
-          onclick="hideside()"
-          class="text-4xl fixed top-20 right-1/2 mr-4">&times;</a
-        >
-      </li>
+     <div
+     class="hidden w-3/4 z-50 decoration-0 text-xl ml-0 fixed top-20 h-full bg-[#0663C7]"
+     id="open"
+   >
+     <ul class="flex flex-col p-3 gap-5 text-white flex-wrap">
+       <li>
+         <a
+           href="#"
+           onclick="hideside()"
+           class="text-4xl fixed top-20 right-1/3 pl-19"
+           >&times;</a
+         >
+       </li>
 
-      <li><a href="./home.html"><i class="fa-solid fa-house p-3"></i>Home</a></li>
-      <li><a href="#"><i class="fa-solid fa-gear p-3"></i>Settings</a></li>
-      <li><a href="#"><i class="fa-solid fa-address-book p-3"></i>Contact Us</a></li>
-      <li><a href="#"><i class="fa-solid fa-circle-info p-3"></i>About Us</a></li>
-      <li><a href="#"><i class="fa-regular fa-circle-question p-3"></i>Help</a></li>
-      <li><a href="#" class="flex p-3"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgMGMtMS43IDAtMyAxLjMtMyAzdjZjMCAxLjcgMS4zIDMgMyAzaDZsNCA0di00YzEuNyAwIDMtMS4zIDMtM1YzYzAtMS43LTEuMy0zLTMtM3ptNC4xODggM2gxLjcxOGwxLjY4OCA2aC0xLjVsLS40MDctMS41aC0xLjVMMTYuODEzIDlIMTUuNXpNMTggNGMtLjEuNC0uMjEyLjg4OC0uMzEzIDEuMTg4bC0uMjggMS4zMTJoMS4xODdsLS4yODItMS4zMTNDMTguMTEzIDQuODg4IDE4IDQuNCAxOCA0TTMgMTBjLTEuNyAwLTMgMS4zLTMgM3Y2YzAgMS43IDEuMyAzIDMgM3Y0bDQtNGg2YzEuNyAwIDMtMS4zIDMtM3YtNmgtM2MtMS45IDAtMy40MDYtMS4zLTMuOTA2LTN6bTQuNTk0IDIuOTA2YzEuNyAwIDIuNSAxLjQgMi41IDNjMCAxLjQtLjQ4MSAyLjI4OC0xLjI4MSAyLjY4OGMuNC4yLjg3NC4zMDYgMS4zNzQuNDA2bC0uMzc0IDFjLS43LS4yLTEuNDI2LS41MTItMi4xMjYtLjgxM2MtLjEtLjEtLjI3NS0uMDkzLS4zNzUtLjA5M0M2LjExMiAxOC45OTQgNSAxOCA1IDE2YzAtMS43Ljk5NC0zLjA5NCAyLjU5NC0zLjA5NG0wIDEuMDk0Yy0uOCAwLTEuMTg4LjktMS4xODggMmMwIDEuMi4zODggMiAxLjE4OCAyczEuMjE4LS45IDEuMjE4LTJzLS40MTgtMi0xLjIxOC0yIi8+PC9zdmc+">&nbsp;&nbsp;FA.Q's</a></li>
+       <li>
+         <a href="./home.html"><i class="fa-solid fa-house p-3"></i>Home</a>
+       </li>
+       <li>
+         <a href="#"
+           ><i class="fa-solid fa-gear p-3"></i>Settings</a
+         >
+       </li>
+       <li>
+         <a href="3"
+           ><i class="fa-solid fa-address-book p-3"></i>Contact Us</a
+         >
+       </li>
+       <li>
+         <a href="#"
+           ><i class="fa-solid fa-circle-info p-3"></i>About Us</a
+         >
+       </li>
+       <li>
+         <a href="#"
+           ><i class="fa-regular fa-circle-question p-3"></i>Help</a
+         >
+       </li>
+       <li>
+         <a href="#" class="flex p-3"
+           ><img
+             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTMgMGMtMS43IDAtMyAxLjMtMyAzdjZjMCAxLjcgMS4zIDMgMyAzaDZsNCA0di00YzEuNyAwIDMtMS4zIDMtM1YzYzAtMS43LTEuMy0zLTMtM3ptNC4xODggM2gxLjcxOGwxLjY4OCA2aC0xLjVsLS40MDctMS41aC0xLjVMMTYuODEzIDlIMTUuNXpNMTggNGMtLjEuNC0uMjEyLjg4OC0uMzEzIDEuMTg4bC0uMjggMS4zMTJoMS4xODdsLS4yODItMS4zMTNDMTguMTEzIDQuODg4IDE4IDQuNCAxOCA0TTMgMTBjLTEuNyAwLTMgMS4zLTMgM3Y2YzAgMS43IDEuMyAzIDMgM3Y0bDQtNGg2YzEuNyAwIDMtMS4zIDMtM3YtNmgtM2MtMS45IDAtMy40MDYtMS4zLTMuOTA2LTN6bTQuNTk0IDIuOTA2YzEuNyAwIDIuNSAxLjQgMi41IDNjMCAxLjQtLjQ4MSAyLjI4OC0xLjI4MSAyLjY4OGMuNC4yLjg3NC4zMDYgMS4zNzQuNDA2bC0uMzc0IDFjLS43LS4yLTEuNDI2LS41MTItMi4xMjYtLjgxM2MtLjEtLjEtLjI3NS0uMDkzLS4zNzUtLjA5M0M2LjExMiAxOC45OTQgNSAxOCA1IDE2YzAtMS43Ljk5NC0zLjA5NCAyLjU5NC0zLjA5NG0wIDEuMDk0Yy0uOCAwLTEuMTg4LjktMS4xODggMmMwIDEuMi4zODggMiAxLjE4OCAyczEuMjE4LS45IDEuMjE4LTJzLS40MTgtMi0xLjIxOC0yIi8+PC9zdmc+"
+           />&nbsp;&nbsp;FA.Q's</a
+         >
+       </li>
 
-      <li><a href="#"><i class="fa-solid fa-share-from-square p-3"></i>Share</a></li>
-      </ul>
-  </div>
-</nav>
+       <li>
+         <a href="#"
+           ><i class="fa-solid fa-share-from-square p-3"></i>Share</a
+         >
+       </li>
+     </ul>
+   </div>
     <main
       class="flex flex-wrap justify-center items-start gap-6 w-full p-4 z-0"
     >
     <img src="./Donate_Life/profiles.png" class="bg-white"
     >
 
-    <div class="p-6 w-3/4 flex flex-col items-start justify-start shadow-lg text-2xl text-left rounded-md">
+    <div class="p-3 w-3/4 flex flex-col items-start justify-start shadow-lg text-xl text-left rounded-md">
       
 <div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Personal Details</p></div>
 <div class="flex justify-start gap-3"><i class="fa-solid fa-angle-right"></i><p>Nominee Detials</p></div>
@@ -76,7 +105,7 @@
 
     <!-- Bottom Navigation Bar (Always Visible) -->
     <nav
-      class="fixed bottom-0 left-0 w-full bg-white text-white p-3 shadow-md z-50 border-2 border-blue-400"
+      class="fixed bottom-0 left-0 w-full bg-white text-white p-3 shadow-md z-50 border-2 border-t-blue-400"
     >
       <div class="flex justify-around">
         <div class="h-full">
